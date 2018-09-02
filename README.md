@@ -7,7 +7,10 @@ Don't forget to send me (kai_gerd_mueller@gmx.de) an email, containing the youtu
 Thanks in advance, KGM.
 # Videos
 None by now :{ (
-# AutoClick
+# AutoClick (will not be detected by rubenwardys anticheat system by now)
+# if you dont mind being banned from time to time (CTF), just use this :)
+# if ruben updates his anticheat, it may ban you again. if you don't want that, switch it off when match is about to end using .noappls :] 
+# if you got banned, contact me (kai_gerd_mueller@gmx.de), and i will fix that in the next version.
 # Install:
 know how to execute shellscript?<br />
 execute the installer script in this repository with sudo.<br />
