@@ -140,6 +140,9 @@ end
 pipe = 0
 hit = function()
 	local hp = minetest.localplayer:get_hp()
+	if hp == 1 then
+		return
+	end
 	local hp_delay = math.ceil((20-hp)/2)
 	local time = minetest.get_us_time()
 	if (hp < 12) and apples and ((time-pipe) > -(hp_delay*50000)) then
