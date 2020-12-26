@@ -1,5 +1,13 @@
 # minetest-bot-collection<br />
 Easily installable bots that simulate user input to help you play minetest (Especially recommended for Rubenwardys CTF) (personal use License plus the Rule that You are not allowed to publish copys or work based on this)
+# !Regarding Security!
+This was insecure for long times, allowing anything that could print to minetest output (so basically the minetest servers you use it on) while it was running to take over the machine by injecting shellscript commands.
+I was informed about this long ago by Rubenwardy, but shook it off somehow.
+I still dont regard this to be a major thread, since the attack would have to come from a minetest server you use the cheat on and be specifically designed for (the old version of) this program, and literally noone uses this shitware, so I don't think anyone will go and craft an attack against it.
+Finally, I patched this obvious flaw.
+Still this program may present a minor security risk due to the inherent design flaws, as it may allow someone who already hacked you to further their privileges (idk). I regard this a minor security risk, because really, if someones hacked you there was already some other weak spot, and there will likely also be another weak spot they can use to further their privileges. (And still, who in hell would attack this shitware literally noone uses?!)
+However, I would not suggest to install this nor any games on a platform where security is paramount, really!!!
+I would not want to bet that the other "Gamedevs" do a much better job than me regarding security (doing better than I did isn't hard tho LOL, in fact doing as bad as I did is)...
 # PLZ PLZ PLZ Make youtube video if you like my bot :{ )
 My bot got a bit popular here :{ ), but since not everybody is familiar with github, I'd like it if it where present on youtube as well, but since I'm not very good at making videos (and I'm working on better ctf), I'd like some users to do that :{ ).
 also, If that bot gets really popular, I may make new, better bots, and add them to this collection.
