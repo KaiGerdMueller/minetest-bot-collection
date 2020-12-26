@@ -1,7 +1,7 @@
 # minetest-bot-collection<br />
 Easily installable bots that simulate user input to help you play minetest (Especially recommended for Rubenwardys CTF) (personal use License plus the Rule that You are not allowed to publish copys or work based on this)
 # !Regarding Security!
-This was insecure for long times, allowing anything that could print to minetest output (so basically the minetest servers you use it on) while it was running to take over the machine by injecting shellscript commands.
+This shitware was insecure for long times, allowing anything that could print to minetest output (so basically the minetest servers you use it on) while it was running to take over the machine by injecting shellscript commands.
 I was informed about this long ago by Rubenwardy, but shook it off somehow.
 I still dont regard this to be a major thread, since the attack would have to come from a minetest server you use the cheat on and be specifically designed for (the old version of) this program, and literally noone uses this shitware, so I don't think anyone will go and craft an attack against it.
 Finally, I patched this obvious flaw.
