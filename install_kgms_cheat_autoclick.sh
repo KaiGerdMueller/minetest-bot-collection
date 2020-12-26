@@ -173,7 +173,6 @@ minetest.register_chatcommand("noappls", {
 		apples = false
 	end,
 })
-minetest.register_on_death(function() os.pycmd("stacks 30")end)
 minetest.register_chatcommand("hit2", {
 	params = "",
 	description = "second hit",
