@@ -16,7 +16,7 @@ import subprocess, time, sys
 from jpype import *
 startJVM(getDefaultJVMPath())
 robot = java.awt.Robot()
-stacks = [0]
+stacks = []
 appleslist = [java.awt.event.KeyEvent.VK_2,java.awt.event.KeyEvent.VK_3,java.awt.event.KeyEvent.VK_4,java.awt.event.KeyEvent.VK_5,java.awt.event.KeyEvent.VK_6,java.awt.event.KeyEvent.VK_7,java.awt.event.KeyEvent.VK_8]
 def click():
     java.lang.Thread.sleep(25)
