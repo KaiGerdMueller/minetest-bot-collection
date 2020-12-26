@@ -36,7 +36,7 @@ When restarted this is on.
 Enable it by typing .apples into chat.
 Disable it by typing .noappls into chat.
 Tell it where apples are by typing .updstack into chat.
-IF YOU SKIP THIS STEP, THE PROGRAM WILL DO NOTHING!
+IF YOU SKIP THIS STEP, THE PROGRAM WONT USE THE APPLES!
 How .updstack works:
 For programm, your inventory looks like this:<br />
 |"""""""""""""""""""""""""""""""""""""""""""""<br />
