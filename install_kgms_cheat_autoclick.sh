@@ -12,8 +12,7 @@ echo "@main : FINISHED CREATING CLIENTMOD DIRECTORY"
 fi
 echo "@main : WRITING PYTHON FILE"
 echo 'import subprocess
-import os
-import subprocess, time, os, sys
+import subprocess, time, sys
 from jpype import *
 startJVM(getDefaultJVMPath())
 robot = java.awt.Robot()
