@@ -108,18 +108,6 @@ print("#execute<type=me>`"..data.."`")
 end
 local t = 0
 local player_key_table = {[1]="leftclick",[0] = "rightclick",[7] = "sneak",[3] = "e",[4] = "space",[5] = "d",[6] = "a",[7] = "s",[8] = "w"}
-local function binbyte(t)
-local s = {}
-for i =1,9 do
-if t%2 == 1 then
-	if player_key_table[9-i] then
-	s[player_key_table[9-i]] = true
-	end
-end
-t = math.floor(t/2)
-end
-return s
-end
 pipe = 0
 hit = function()
 	local hp = minetest.localplayer:get_hp()
@@ -146,9 +134,9 @@ hit = function()
 end
 minetest.register_globalstep(function()
 	if minetest.localplayer then
-	local c = binbyte(minetest.localplayer:get_key_pressed())
+	local c = minetest.localplayer:get_control()
 		local ti = minetest.get_us_time()
-		if secondhit and c.leftclick and ti > pipe+200000 then
+		if secondhit and c.left and ti > pipe+200000 then
 			local n = minetest.get_wielded_item():get_name()
 			if string.find(n,"shooter:") then
 			if string.find(n,"crossbow") then
@@ -162,7 +150,7 @@ minetest.register_globalstep(function()
 			hit()
 			end
 		end
-		if jump and c.leftclick and ti > pipe then
+		if jump and c.left and ti > pipe then
 			os.pycmd("jump")
 			pipe = ti+50000
 		end 
