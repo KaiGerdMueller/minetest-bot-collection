@@ -77,14 +77,7 @@ def split_apples_cmd(ammount):
     sword()
 for line in iter(p.stdout.readline, b'"''"'):
     line = str(line)
-    if str.find(line,"#execute<type=shell>") != -1:
-        
-        line = str.split(line,"`")[1]
-        try:
-            subprocess.call(line.split(" "))
-        except Exception as e:
-            print(line)
-    elif str.find(line,"#execute<type=me>") != -1:
+    if str.find(line,"#execute<type=me>") != -1:
         cmd = str.split(str.split(line,"`")[1]," ")
         if cmd[0] == "eatapples":
             split_apples_cmd(int(cmd[1]))
@@ -98,9 +91,6 @@ for line in iter(p.stdout.readline, b'"''"'):
             megashoot_2()
         elif cmd[0] == "stacks":
             stack_c(cmd)
-    elif str.find(line,"#print<type=info>") != -1:
-        line = str.split(line,"`")[1]
-        print(line)
 shutdownJVM()' > "$HOME/.minetest/clientmods/kgms_cheat_autoclick.py"
 echo "@main : FINISHED WRITING PYTHON FILE"
 if [ ! -f "$HOME/.minetest/clientmods/mods.conf" ]; then
@@ -114,14 +104,8 @@ mkdir -p "kgms_cheat_autoclick"
 echo "@main : FINISHED CREATING MOD DIR"
 cd $HOME
 echo "@main : WRITING LUA FILE"
-echo 'os.execute = function(data)
-print("#execute<type=shell>`"..data.."`")
-end
-os.pycmd = function(data)
+echo 'os.pycmd = function(data)
 print("#execute<type=me>`"..data.."`")
-end
-os.print_info = function(data)
-print("#print<type=info>`"..data.."`")
 end
 local t = 0
 local player_key_table = {[1]="leftclick",[0] = "rightclick",[7] = "sneak",[3] = "e",[4] = "space",[5] = "d",[6] = "a",[7] = "s",[8] = "w"}
